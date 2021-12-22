@@ -10,21 +10,33 @@ E.g.
 Input: "E"
 
 ....A....
+
 ...B.B...
+
 ..C...C..
+
 .D.....D.
+
 E.......E
+
 .D.....D.
+
 ..C...C..
+
 ...B.B...
+
 ....A....
 
 Input: "C"
 
 ..A..
+
 .B.B.
+
 C...C
+
 .B.B.
+
 ..A..
 
 ## Ideen zur Umsetzung
@@ -36,4 +48,3 @@ $alphabet = ['A', 'B', 'C',...]; -> gibt es bereits eine PHP-Lösung dafür?
 Position des eingegebenen Buchstabens herausfinden.
 
 Innere Punkte: Ungerade Anzahl + 2: 0, 1, 3, 5, 7,...
-
