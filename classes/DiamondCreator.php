@@ -1,9 +1,11 @@
 <?php
 
+namespace Diamond;
+
 /**
- * Diamond printing class.
+ * Diamond creating class.
  */
-class Diamond
+class DiamondCreator
 {
     /**
      * Letters of the English alphabet.
