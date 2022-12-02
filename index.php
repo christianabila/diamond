@@ -1,8 +1,11 @@
 <?php
-include 'Diamond.php';
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Diamond\DiamondCreator;
 
 if (isset($_POST['letter'])) {
-    $diamond = new Diamond();
+    $diamond = new DiamondCreator();
 
     echo $diamond->buildDiamond($_POST['letter']);
 }
