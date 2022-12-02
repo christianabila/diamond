@@ -3,8 +3,8 @@
 /**
  * Diamond printing class.
  */
-class Diamond {
-
+class Diamond
+{
     /**
      * Letters of the English alphabet.
      *
@@ -19,7 +19,8 @@ class Diamond {
      * @param string $letter
      * @return integer
      */
-    public function getPosition(string $letter): int {
+    public function getPosition(string $letter): int
+    {
         if (in_array($letter, $this->alphabet)) {
             return array_search($letter, $this->alphabet) + 1;
         }
@@ -33,7 +34,8 @@ class Diamond {
      * @param string $letter
      * @return string
      */
-    public function buildDiamond(string $letter): string {
+    public function buildDiamond(string $letter): string
+    {
         $position = $this->getPosition($letter);
         $diamond = '';
         $diamondArray = [];
