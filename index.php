@@ -1,5 +1,7 @@
 <?php
 
+namespace Diamond;
+
 require __DIR__ . '/vendor/autoload.php';
 
 use Diamond\DiamondCreator;
