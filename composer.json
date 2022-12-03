@@ -1,5 +1,11 @@
 {
     "autoload": {
-        "psr-4": {"Diamond\\": "classes/"}
+        "psr-4": {
+            "Diamond\\": "/",
+            "Diamond\\Classes\\": "classes/"
+        }
+    },
+    "require": {
+        "mustache/mustache": "~2.5"
     }
 }
