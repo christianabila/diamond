@@ -1,6 +1,6 @@
 <?php
 
-namespace Diamond;
+namespace Diamond\Classes;
 
 /**
  * Diamond creating class.
