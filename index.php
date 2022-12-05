@@ -7,6 +7,12 @@ require __DIR__ . '/vendor/autoload.php';
 use Diamond\Classes\DiamondCreator;
 use Mustache_Engine;
 use Mustache_Loader_FilesystemLoader;
+use Dotenv;
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$title = $_ENV['TITLE'];
 
 if (isset($_POST['letter'])) {
     $diamond = new DiamondCreator();
@@ -19,4 +25,4 @@ $mustacheEngine = new Mustache_Engine([
     'loader' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/templates'),
 ]);
 
-echo $mustacheEngine->render('main');
+echo $mustacheEngine->render('main', ['title' => $title]);
