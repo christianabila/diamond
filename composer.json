@@ -6,6 +6,7 @@
         }
     },
     "require": {
-        "mustache/mustache": "~2.5"
+        "mustache/mustache": "~2.5",
+        "vlucas/phpdotenv": "^5.5"
     }
 }
