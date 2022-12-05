@@ -1,7 +1,18 @@
  <body>
-    <form action="." method="POST">
-        <label for="letter">Letter:</label>
-        <input type="text" name="letter">
-        <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form action="." method="POST" class="form">
+                    <label for="letter">Letter:</label>
+                    <input type="text" name="letter" class="form-control">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                {{> output}}
+            </div>
+        </div>
+    </div>
 </body>
